@@ -1,0 +1,218 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #282c34;
+    color: white;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding-top: 10vh;
+}
+
+#accueil {
+    text-decoration: none;
+}
+
+.navigation {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    padding: 1rem;
+}
+
+.logo {
+    max-height: 10vh;
+}
+
+h1 {
+    transition: 0.1s;
+    font-size: 2em;
+    cursor: default;
+    margin-left: 10px;
+}
+
+h1:hover {
+    text-shadow: 5px 5px 5px rgb(7, 157, 236);
+}
+
+.previous {
+    font-size: 7rem;
+    color: rgb(7, 157, 236);
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 0px 15px 0px 15px;
+    position: absolute;
+    height: 100%;
+    border: 0px;
+    background-color: rgba(40, 44, 52, 0.6);
+}
+
+.next {
+    font-size: 7rem;
+    color: rgb(7, 157, 236);
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 0px 15px 0px 15px;
+    height: 100%;
+    border: 0px;
+    background-color: rgba(40, 44, 52, 0.6);
+    position: absolute;
+    left: 90%;
+}
+
+.test {
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+.testBis {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+/*content -----------------------------------------------*/
+
+.titre {
+    background: rgba(70, 70, 70, 0.6);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.content {
+    width: 100%;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+.apercu {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.synopsis {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.synopsisDescription {
+    font-size: 1.3rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.description {
+    margin: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 33% auto;
+}
+
+.colonneUn {
+    display: flex;
+}
+
+.containDesc {
+    top: -20px;
+    margin-left: 20px;
+    height: 100%;
+}
+
+.affiche {
+    border: 5px solid rgb(7, 157, 236);
+    border-radius: 20px;
+    height: 55vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+
+/*Seconde colonne ------------------------------------------------*/
+
+.colonneDeux {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 100%;
+}
+
+.logo {
+    width: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character,
+.location,
+.espece,
+.vehicule {
+    border: 2px solid rgb(7, 157, 236);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+/*Footer ----------------------------------------------------*/
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0vh;
+    left: 0vh;
+    height: 3.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 15px;
+}
+
+.imgFooter {
+    max-width: 4vh;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.api {
+    text-align: right
+}
+
+.ghibliAPI {
+    text-decoration: underline;
+    font-size: 1rem;
+    color: white;
+    padding-right: 20px;
+}
